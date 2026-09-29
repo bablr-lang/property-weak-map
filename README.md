@@ -16,7 +16,7 @@ export const buildPoint = (x, y) => {
   point.x = x;
   point.y = y;
   Object.freeze(point);
-  validPoints.set(point, true);
+  validPoints.add(point);
   return point;
 };
 
